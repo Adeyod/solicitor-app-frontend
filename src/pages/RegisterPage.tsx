@@ -64,7 +64,7 @@ const registerParams: RegisterParams[] = [
 ];
 
 const RegisterPage = () => {
-  const [phoneValue, setPhoneValue] = useState('+2348100987235');
+  const [phoneValue, setPhoneValue] = useState('');
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     first_name: '',
@@ -79,7 +79,7 @@ const RegisterPage = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const { error } = joiRegisterValidationSchema.validate(formData, {
+    const { error } = joiRegisterValidationSchema.validate(formInput, {
       abortEarly: false,
     });
 
