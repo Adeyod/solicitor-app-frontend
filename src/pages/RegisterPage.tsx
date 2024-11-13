@@ -15,7 +15,7 @@ import {
   RegisterButtonTextStyle,
 } from '../constants/styles';
 import { joiRegisterValidationSchema } from '../hooks/validation';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const registerParams: RegisterParams[] = [
   {
@@ -64,6 +64,7 @@ const registerParams: RegisterParams[] = [
 ];
 
 const RegisterPage = () => {
+  const navigate = useNavigate();
   const [phoneValue, setPhoneValue] = useState('');
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
@@ -97,6 +98,8 @@ const RegisterPage = () => {
       if (data) {
         toast.success(data.message);
         console.log(data);
+        navigate('/login');
+        return;
       }
     } catch (error: unknown) {
       if (axios.isAxiosError(error) && error.response) {
