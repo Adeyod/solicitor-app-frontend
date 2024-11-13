@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 
-import ImageFile from '../components/ImageFile';
 import {
   LoginFormData,
   LoginFormDataKey,
@@ -17,7 +16,7 @@ import {
   RegisterButtonStyle,
   RegisterButtonTextStyle,
 } from '../constants/styles';
-// import { LoginRoute } from '../hooks/ApiRoutes';
+import companyLogo from '/src/images/companyLogo.png';
 import { joiLoginValidationSchema } from '../hooks/validation';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -113,7 +112,7 @@ const LoginPage = () => {
         transition={{ type: 'spring', stiffness: 20, duration: 5 }}
         initial={{ x: '-100vw', opacity: 0 }}
       >
-        <ImageFile />
+        <img src={companyLogo} className="w-[40vw]" />
       </motion.div>
       <form
         action=""

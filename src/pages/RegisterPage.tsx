@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import companyLogo from '/src/images/companyLogo.png';
 
 import Form from '../components/Form';
 import Phone from '../components/Phone';
@@ -13,7 +14,6 @@ import {
   RegisterButtonStyle,
   RegisterButtonTextStyle,
 } from '../constants/styles';
-import ImageFile from '../components/ImageFile';
 import { joiRegisterValidationSchema } from '../hooks/validation';
 import { Link } from 'react-router-dom';
 
@@ -125,7 +125,7 @@ const RegisterPage = () => {
         transition={{ type: 'spring', stiffness: 20, duration: 5 }}
         initial={{ x: '-100vw', opacity: 0 }}
       >
-        <ImageFile />
+        <img src={companyLogo} className="w-[40vw]" />
       </motion.div>
       <form
         action=""
