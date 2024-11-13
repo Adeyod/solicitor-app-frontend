@@ -11,6 +11,7 @@ import ClientSidebar from './SidebarComponents/ClientSidebar';
 import AdminSidebar from './SidebarComponents/AdminSidebar';
 import LogoutComponent from './LogoutComponent';
 import companyLogo from '/src/images/companyLogo.png';
+import placeHolder2 from '/src/images/placeholderImage2.jpg';
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -93,7 +94,7 @@ const NavBar = () => {
                     src={
                       currentUser?.profile_image?.url
                         ? currentUser?.profile_image?.url
-                        : '/src/images/placeholderImage2.jpg'
+                        : { placeHolder2 }
                     }
                     alt=""
                   />
