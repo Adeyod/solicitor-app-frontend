@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 
 import companyLogo from '/src/images/companyLogo.png';
-import ImageFile from '../components/ImageFile';
 
 const HomePage = () => {
   return (
@@ -36,7 +35,7 @@ const HomePage = () => {
             transition={{ type: 'spring', stiffness: 20, duration: 5 }}
             initial={{ x: '100vw', opacity: 0 }}
           >
-            <ImageFile />
+            <img src={companyLogo} className="w-[40vw]" />
           </motion.div>
         </div>
       </div>

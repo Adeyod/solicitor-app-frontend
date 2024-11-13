@@ -10,6 +10,7 @@ import GeneralSideComponents from './SidebarComponents/GeneralSideComponents';
 import ClientSidebar from './SidebarComponents/ClientSidebar';
 import AdminSidebar from './SidebarComponents/AdminSidebar';
 import LogoutComponent from './LogoutComponent';
+import companyLogo from '/src/images/companyLogo.png';
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -64,10 +65,11 @@ const NavBar = () => {
       >
         <div className="cursor-pointer flex items-center">
           <img
-            src="/src/images/coyLogo-bg.png"
+            src={companyLogo}
             alt=""
             className="w-12 border-2 border-black rounded-full"
           />
+
           <Link to="/" className="italic text-xl">
             XYX Solicitor
           </Link>
