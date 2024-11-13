@@ -111,6 +111,7 @@ const LoginPage = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 20, duration: 5 }}
         initial={{ x: '-100vw', opacity: 0 }}
+        className="hidden smm:flex"
       >
         <img src={companyLogo} className="w-[40vw]" />
       </motion.div>
@@ -150,13 +151,13 @@ const LoginPage = () => {
           buttonTextStyle={RegisterButtonTextStyle}
         />
         <div className="mg:flex gap-3">
-          <div className="flex gap-1 italic text-[14px] mt-2">
+          <div className="flex gap-1 italic text-[13px] smm:text-[14px] mt-2">
             <p>Don't have an account?</p>
             <Link className="font-bold text-blue-500 underline" to="/register">
               Register
             </Link>
           </div>
-          <div className="flex gap-1 text-[14px] italic mt-2">
+          <div className="flex gap-1 text-[13px] smm:text-[14px] italic mt-2">
             <p>Forgot Password?</p>
             <Link
               className="font-bold text-blue-500 underline"

@@ -124,6 +124,7 @@ const RegisterPage = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 20, duration: 5 }}
         initial={{ x: '-100vw', opacity: 0 }}
+        className="hidden smm:flex"
       >
         <img src={companyLogo} className="w-[40vw]" />
       </motion.div>

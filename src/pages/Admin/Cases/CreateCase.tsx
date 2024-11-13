@@ -214,7 +214,7 @@ const CreateCase = () => {
               transition={{ type: 'spring', stiffness: 30, duration: 1.5 }}
               initial={{ x: '100vw', opacity: 0 }}
             >
-              <p className="uppercase text-3xl text-center font-bold underline">
+              <p className="uppercase text-[25px] smm:text-3xl text-center font-bold underline">
                 Case Creation
               </p>
               {createCaseParams.map((param) => (

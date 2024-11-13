@@ -105,7 +105,7 @@ const Dashboard = () => {
       {isLoading ? (
         <Spinner />
       ) : (
-        <div className="p-4 w-[90%]">
+        <div className="smm:p-4 w-[90%]">
           <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
 
           {/* Key Metrics */}
@@ -120,9 +120,11 @@ const Dashboard = () => {
           </div>
 
           {/* Chart */}
-          <div className="mb-[120px] w-[30rem]">
-            <h2 className="text-xl font-semibold mb-4">Overview of Data</h2>
-            <div className="w-full">
+          <div className="mb-[120px] smm:w-[30rem]">
+            <h2 className="text-[13px] smm:text-xl font-semibold mb-4">
+              Overview of Data
+            </h2>
+            <div className="w-[20rem] smm:w-full">
               <ChartComponent
                 type="doughnut"
                 data={chartData}

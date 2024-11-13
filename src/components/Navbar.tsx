@@ -128,7 +128,7 @@ const NavBar = () => {
               ].join(' ')}
             >
               {currentUser && currentUser !== null ? (
-                <div className="ml-[-50px] text-[12px] flex flex-col items-start gap-1 mt-6">
+                <div className=" ml-[-50px] text-[12px] flex flex-col items-start gap-1 mt-6">
                   <GeneralSideComponents />
 
                   {currentUser.role === 'client' && <ClientSidebar />}
@@ -148,7 +148,7 @@ const NavBar = () => {
                   </button>
                 </div>
               ) : (
-                <div className="flex flex-col items-center gap-4 mt-6">
+                <div className="flex flex-col items-start ml-[-30px] md:items-center gap-4 mt-6">
                   <Link to="/login" className="">
                     Login
                   </Link>

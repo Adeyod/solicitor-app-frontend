@@ -1,3 +1,4 @@
+// const host = 'http://localhost:1010/api';
 const host = 'https://solicitor-app-backend.onrender.com/api';
 
 const RegisterRoute = `${host}/auth/register`;

@@ -10,7 +10,7 @@ const AdminSidebar = ({
   casesDropDownOpen,
 }: SidebarComponentProps) => {
   return (
-    <div className="flex flex-col items-start mx-5 mt-3 gap-3 font-bold text-white">
+    <div className="flex flex-col items-start mx-3 smm:mx-5 mt-3 gap-3 font-bold text-white">
       <NavLink
         className={(isActive) => NavLinkComponent(isActive)}
         to="/admin/dashboard"
